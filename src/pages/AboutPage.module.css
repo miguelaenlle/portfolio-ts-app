@@ -1,5 +1,5 @@
 .content-wrapper {
-    height: 40vh;
+    height: 60vh;
 }
 @media screen and (max-height: 300px) {
     .content-wrapper {

@@ -5,6 +5,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 1rem;
-    border-bottom: #C4C4C4 solid 1px;
+    padding-bottom: 0.5rem;
 }

@@ -1,3 +1,13 @@
 .main-content {
-    position: relative;
+  padding: 50px;
+}
+.contact-header {
+  font-size: 1.5rem;
+  color: #353535;
+  margin-bottom: 0;
+}
+.contact-subheader {
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  color: #A0A0A0;
 }
