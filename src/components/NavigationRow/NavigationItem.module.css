@@ -1,0 +1,11 @@
+.navigation-item {
+    font-size: 1.25rem;
+    color: #AAAAAA;
+    transition: color 0.2s ease-in-out;
+    padding: 0;
+
+}
+.navigation-item:hover {
+    color: #616161;
+    cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.content-wrapper {
+    height: 40vh;
+}
+@media screen and (max-height: 300px) {
+    .content-wrapper {
+        height: calc(100vh+20vh);
+    }
+    
+}

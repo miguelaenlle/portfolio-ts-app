@@ -1,0 +1,10 @@
+.header-text {
+    font-size: 1.5rem;
+}
+.header-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: #C4C4C4 solid 1px;
+}
