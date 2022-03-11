@@ -1,0 +1,23 @@
+.button-background {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(#f4f4f4, #ffffff);
+  border: 1px solid #acacac;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #676767;
+  padding: 0rem 1rem;
+  margin-right: 1.75rem;
+  transition: background-image 0.2s ease-in-out;
+}
+
+.button-background:hover {
+  background-image: linear-gradient(#E2FDFF, #EDEDED);
+  transition: background-image 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.button-background > svg {
+  margin-right: 0.5rem;
+}

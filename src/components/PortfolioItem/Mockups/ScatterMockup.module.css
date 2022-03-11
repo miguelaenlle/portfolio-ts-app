@@ -1,0 +1,27 @@
+.base-image {
+  position: relative;
+  z-index: 1;
+  margin-right: auto;
+}
+.sub-image-1 {
+  position: absolute;
+  z-index: 3;
+  bottom: -0rem;
+  right: -3rem;
+}
+
+.sub-image-2 {
+  position: absolute;
+  z-index: 3;
+  bottom: -0rem;
+  right: -10rem;
+}
+.image-1 {
+  width: 60vw;
+}
+.image-2 {
+  width: 16vw;
+}
+.image-3 {
+  width: 14vw;
+}

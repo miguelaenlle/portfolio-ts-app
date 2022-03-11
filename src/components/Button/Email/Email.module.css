@@ -1,0 +1,14 @@
+.email-row {
+    display: flex;
+    font-size: 1rem;
+    color: #6FA2A5;
+    transition: color 0.2s ease-in-out;
+    align-items: center;
+}
+.email-row:hover {
+    color: #4C8689;
+    cursor: pointer;
+}
+.email-row > * {
+    margin-right: 0.75rem;
+}

@@ -1,0 +1,15 @@
+.row {
+  margin-top: 1rem;
+  display: flex;
+  background-image: linear-gradient(#f7f7f7, #ffffff);
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 1rem;
+}
+
+.wide-row {
+  justify-content: center;
+}
+.compact-row {
+  padding-left: 3rem;  
+}
