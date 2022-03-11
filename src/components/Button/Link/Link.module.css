@@ -4,11 +4,15 @@
     color: #6FA2A5;
     transition: color 0.2s ease-in-out;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 .resume-row:hover {
-    color: #4C8689;
+    color: #427375;
     cursor: pointer;
 }
 .resume-row > * {
-    margin-right: 0.75rem;
+    margin-right: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }

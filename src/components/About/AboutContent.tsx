@@ -14,7 +14,6 @@ const AboutContent: React.FC<{}> = (props) => {
         <Link text={"View Resume"} link={"/resume"} />
       </div>
     </>
-
   );
 };
 export default AboutContent;

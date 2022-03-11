@@ -16,7 +16,8 @@ const ContactContent: React.FC<{}> = (props) => {
         socials={["github", "linkedin", "email"]}
         email="miguelaenlle@icloud.com"
       />
-      <Link text="Resume" link=""/>
+      <br />
+      <Link text="Resume" link="" />
     </div>
   );
 };

@@ -1,18 +1,10 @@
-import HeaderText from "../components/Text/Header/HeaderText";
-import PageDivider from "../components/Text/Header/PageDivider";
+import classes from "./ProjectsPage.module.css"
+import PortfolioContent from "../components/Portfolio/PortfolioContent";
+
 const ProjectsPage: React.FC<{}> = (props) => {
     return (
-        <div>
-            <HeaderText text="Projects" />
-            <br />
-            <PageDivider />
-            <br />
-            <h2>project</h2>
-            <h2>project</h2>
-            <h2>project</h2>
-            <h2>project</h2>
-            <h2>project</h2>
-            <h2>project</h2>
+        <div className = {classes["portfolio-container"]}>
+            <PortfolioContent />
         </div>
     );
 }

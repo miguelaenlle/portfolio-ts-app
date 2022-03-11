@@ -1,5 +1,11 @@
 .content-wrapper {
-    height: 60vh;
+    height: 70vh;
+}
+@media screen and (max-width: 1000px) {
+    .content-wrapper {
+        height: calc(100vh+20vh);
+    }
+    
 }
 @media screen and (max-height: 300px) {
     .content-wrapper {
