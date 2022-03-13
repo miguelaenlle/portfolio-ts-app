@@ -8,11 +8,32 @@ import Wrapper from "./Wrapper";
 
 const Work: React.FC = (props) => {
   const [selectedDetailView, setSelectedDetailView] = useState<string | null>();
+
+  const [scrollPosition, setScrollPosition] = useState({
+    isModalOpen: false,
+    scrollPositionOnModalOpen: window.scrollY,
+  });
+
+  const saveScrollPosition = () => {
+    setScrollPosition({
+      isModalOpen: true,
+      scrollPositionOnModalOpen: window.scrollY,
+    });
+  };
+  const loadScrollPosition = () => {
+    window.scrollTo(0, scrollPosition.scrollPositionOnModalOpen);
+    setScrollPosition((prevState) => {
+      return { ...prevState, isModalOpen: false };
+    });
+  };
+
   const handleOpenPage = (page: string) => {
     setSelectedDetailView(page);
+    saveScrollPosition();
   };
   const handleRemoveDisplayedItem = () => {
     setSelectedDetailView(null);
+    loadScrollPosition();
   };
 
   return (
