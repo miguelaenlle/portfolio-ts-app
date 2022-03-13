@@ -1,3 +1,4 @@
+import DemoItem from "../models/DemoItem";
 import Project from "../models/Project";
 import ProjectDetails from "../models/ProjectDetails";
 import {
@@ -32,6 +33,13 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
       "V7mQst0MMnY",
       "V7mQst0MMnY",
       "V7mQst0MMnY"
+    ],
+    [
+      new DemoItem("./screenshots/Scatter/mockup-laptop.png", "laptop"),
+      new DemoItem("./screenshots/Scatter/mockup-phone.png", "phone"),
+      new DemoItem("./screenshots/Scatter/mockup-laptop.png", "laptop"),
+      new DemoItem("./screenshots/Scatter/mockup-desktop.png", "desktop"),
+      new DemoItem("./screenshots/Scatter/mockup-tablet.png", "tablet")
     ],
     "/",
     "/",

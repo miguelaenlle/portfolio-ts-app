@@ -16,8 +16,12 @@ const ProjectGroup: React.FC<{ project: Project }> = (props) => {
 
   return (
     <>
-      <div className={`${(isLarge && props.project.right !== null) ? classes["left-stack"] : ""}`}>
-        {props.project.right && sizeCtx.isLarge && mockup}
+      <div
+        className={`${
+          isLarge && props.project.right !== null ? classes["left-stack"] : ""
+        }`}
+      >
+        {props.project.right && isLarge && mockup}
         {(!isLarge || props.project.right === null) && mockup}
 
         <div
@@ -52,8 +56,9 @@ const ProjectGroup: React.FC<{ project: Project }> = (props) => {
             wrapped={true}
             compactSizing={false}
           />
+          {!isLarge && <br />}
         </div>
-        {props.project.right === false && sizeCtx.isLarge && mockup}
+        {props.project.right === false && isLarge && mockup}
       </div>
       <HrLine />
     </>

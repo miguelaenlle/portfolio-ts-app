@@ -15,7 +15,6 @@ import Wrapper from "./Wrapper";
 const About: React.FC = (props) => {
   const offset = 500;
   const triggerOnce = true;
-  const sizeCtx = useContext(SizeContext);
 
   return (
     <section className={classes["header-background"]}>
