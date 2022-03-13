@@ -1,0 +1,20 @@
+
+.email-content-mono {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3C6E71;
+    text-decoration: none;
+    
+}
+.email-content {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #3C6E71;
+    text-decoration: none;
+    
+}
+.email-icon {
+    font-size: 1.25rem;
+    color: #3C6E71;
+    margin-right: 1rem;
+}

@@ -1,0 +1,12 @@
+.header {
+    font-size: 5rem;
+    font-weight: 500;
+    color: #353535;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+@media screen and (max-width: 1000px) {
+    .header {
+        font-size: 40px;
+    }
+}

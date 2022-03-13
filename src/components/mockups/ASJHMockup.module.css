@@ -1,0 +1,46 @@
+.image-div-1 {
+  position: relative;
+  z-index: 1;
+}
+.image-1 {
+  width: 50vw;
+  max-width: 1000px;
+}
+.image-2 {
+  width: 20vw;
+  max-width: 200px;
+}
+.image-div-2 {
+  position: absolute;
+  z-index: 3;
+  bottom: -0rem;
+  right: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .image-1 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+  .image-1 {
+    width: 90vw;
+    margin-right: -50vw;
+  
+  }
+  .image-div-2 {
+    max-width: 250px;
+    left: 0;
+    right: none;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .image-1 {
+    margin-right: -5vw;
+  }
+  .image-div-2 {
+    right: 1vw;
+  }
+}

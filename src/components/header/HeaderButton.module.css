@@ -1,0 +1,26 @@
+.button {
+    font-weight: 400;
+    color: #b6b5b5;
+    margin-right: 2rem;
+    transition: all 0.5s 0s ease;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    font-size: 1em;
+    margin-right: 1em;
+}
+
+@media screen and (max-width: 1000px) {
+    .button {
+        font-size: 0.8em;
+        margin-right: 0.2em;
+    }
+}
+
+.selected {
+    color: black;
+    transition: all 0.5s 0s ease;
+}
+.button:hover {
+    color: black;
+    cursor: pointer;
+}

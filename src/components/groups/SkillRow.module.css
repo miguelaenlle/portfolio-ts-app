@@ -1,0 +1,12 @@
+.row {
+  justify-content: flex-start;
+  align-items: center;
+}
+.row > div {
+  margin-right: 1.25rem;
+}
+.wraps {
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}

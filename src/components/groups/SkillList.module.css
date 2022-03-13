@@ -1,0 +1,25 @@
+.skill-wrapper {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(60, 110, 113, 0.1),
+    rgba(60, 110, 113, 0.05)
+  );
+  
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+  width: auto;
+  overflow: hidden;
+  max-width: 700px;
+}
+
+.wide-format {
+  width: 100%;
+}
+
+.skill-wrapper > div {
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+}

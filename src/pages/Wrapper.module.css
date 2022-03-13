@@ -1,0 +1,34 @@
+.wrapper {
+    padding: 3rem 5rem;
+    padding-top: 10rem;
+}
+.wrapper-compact {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2.5rem;
+
+}
+@media screen and (min-width: 2000px) {
+    .wrapper {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1500px;
+    }
+    .wrapper-compact {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1500px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .wrapper-compact {
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+
+    }
+}

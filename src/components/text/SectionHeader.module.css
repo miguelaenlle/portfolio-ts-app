@@ -1,0 +1,17 @@
+.header-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #353535;
+    text-align: left;
+    margin-bottom: 1.5rem; 
+}
+
+.hr-line {
+    border: 1px solid #C4C4C4;
+}
+
+@media screen and (max-width: 1000px) {
+    .header-text {
+        font-size: 25px;
+    }
+}
