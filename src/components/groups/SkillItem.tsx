@@ -1,8 +1,11 @@
 import classes from "./SkillItem.module.css";
 
-const SkillItem: React.FC<{ skill: string; icon: string; inRow: boolean }> = (
-  props
-) => {
+const SkillItem: React.FC<{
+  skill: string;
+  icon: string;
+  inRow: boolean;
+  compactSizing: boolean;
+}> = (props) => {
   return (
     <div
       className={
@@ -16,16 +19,13 @@ const SkillItem: React.FC<{ skill: string; icon: string; inRow: boolean }> = (
       />
       <p
         className={
-          props.inRow ? classes["skill-text-compact"] : classes["skill-text"]
+          `${props.inRow ? classes["skill-text-compact"] : classes["skill-text"]}
+           ${props.compactSizing ? classes["compact-sizing"] : ""}`
         }
       >
         {props.skill}
       </p>
-      {(props.inRow) && (
-        <div className = {classes.vl}>
-
-        </div>
-      )}
+      {props.inRow && <div className={classes.vl}></div>}
     </div>
   );
 };

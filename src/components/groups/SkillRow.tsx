@@ -5,6 +5,7 @@ import classes from "./SkillRow.module.css";
 const SkillRow: React.FC<{
   skillList: Skill[];
   wrapped: boolean;
+  compactSizing: boolean;
 }> = (props) => {
   return (
     <div className={`${classes.row} ${props.wrapped ? classes.wraps : ""}`}>
@@ -14,6 +15,7 @@ const SkillRow: React.FC<{
           skill={skill.name}
           icon={skill.icon}
           inRow={true}
+          compactSizing={props.compactSizing}
         />
       ))}
     </div>

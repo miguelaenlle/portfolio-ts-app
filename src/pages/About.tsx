@@ -23,10 +23,10 @@ const About: React.FC = (props) => {
         <Fade duration={offset} triggerOnce={triggerOnce}>
           <Header content={aboutData.header} />
         </Fade>
-        <Fade duration={offset * 2} delay={offset} triggerOnce={triggerOnce}>
+        <Fade duration={offset * 1} delay={0} triggerOnce={triggerOnce}>
           <Subheader content={aboutData.subheader} />
         </Fade>
-        <Fade duration={offset * 2} delay={offset} triggerOnce={triggerOnce}>
+        <Fade duration={offset * 1} delay={0} triggerOnce={triggerOnce}>
           <SocialIcons socials={["email", ...aboutData.socials]} />
           <br />
           <ViewLink

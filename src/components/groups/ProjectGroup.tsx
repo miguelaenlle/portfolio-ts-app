@@ -50,6 +50,7 @@ const ProjectGroup: React.FC<{ project: Project }> = (props) => {
             key={`skills-${Math.random().toString()}`}
             skillList={props.project.skills}
             wrapped={true}
+            compactSizing={false}
           />
         </div>
         {props.project.right === false && sizeCtx.isLarge && mockup}

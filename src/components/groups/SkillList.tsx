@@ -28,6 +28,7 @@ const SkillList: React.FC<{
               skill={item.name}
               icon={item.icon}
               inRow={false}
+              compactSizing={false}
             />
           </Reveal>
         );

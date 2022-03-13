@@ -1,4 +1,5 @@
 import { useContext, useEffect, useRef, useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import SizeContext from "./context/size-context";
 import { fetchLocation } from "./functions/fetch-locations";
@@ -6,9 +7,9 @@ import { useWindowDimensions } from "./functions/get-window-dimensions";
 import About from "./pages/About";
 import ContactMe from "./pages/ContactMe";
 import HeaderWrapper from "./pages/HeaderWrapper";
+import PortfolioDetail from "./pages/PortfolioDetail";
 import Skills from "./pages/Skills";
 import Work from "./pages/Work";
-import AboutDetail from "./pages/AboutDetail";
 
 function App() {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -98,27 +99,35 @@ function App() {
   }, [windowDimensions.width]);
 
   return (
-    <HeaderWrapper
-      navBackground={navBackground}
-      selectedPage={selectedPage}
-      onSelectPage={handleSelectedPage}
-      windowDimensions={windowDimensions}
-    >
-      <div className={"wrapper"}>
-        <div ref={aboutRef}>
-          <About />
-        </div>
-        <div ref={skillsRef}>
-          <Skills />
-        </div>
-        <div ref={workRef}>
-          <Work />
-        </div>
-        <div ref={contactRef}>
-          <ContactMe />
-        </div>
-      </div>
-    </HeaderWrapper>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <HeaderWrapper
+            navBackground={navBackground}
+            selectedPage={selectedPage}
+            onSelectPage={handleSelectedPage}
+            windowDimensions={windowDimensions}
+          >
+            <div className={"wrapper"}>
+              <div ref={aboutRef}>
+                <About />
+              </div>
+              <div ref={skillsRef}>
+                <Skills />
+              </div>
+              <div ref={workRef}>
+                <Work />
+              </div>
+              <div ref={contactRef}>
+                <ContactMe />
+              </div>
+            </div>
+          </HeaderWrapper>
+        }
+      />
+      <Route path="/:projectName" element={<PortfolioDetail />} />
+    </Routes>
   );
 }
 

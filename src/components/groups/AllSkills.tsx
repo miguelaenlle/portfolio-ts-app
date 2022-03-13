@@ -9,7 +9,7 @@ const AllSkills: React.FC<{}> = (props) => {
   const sizeCtx = useContext(SizeContext);
   const isLarge = sizeCtx.isLarge;
   return (
-    <Fade delay={isLarge ? 900 : 0} triggerOnce>
+    <Fade delay={isLarge ? 0 : 0} triggerOnce>
       <div>
         {Object.keys(skills).map((skillGroup) => (
           <div key={`row_${skillGroup}`} className={classes["skill-row"]}>
@@ -23,6 +23,7 @@ const AllSkills: React.FC<{}> = (props) => {
               key={skillGroup}
               skillList={skills[skillGroup]}
               wrapped={isLarge}
+              compactSizing={false}
             />
           </div>
         ))}

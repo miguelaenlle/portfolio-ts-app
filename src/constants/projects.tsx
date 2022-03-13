@@ -1,19 +1,38 @@
 import Project from "../models/Project";
+import ProjectDetails from "../models/ProjectDetails";
 import {
-  swift,
-  swiftUI,
-  react,
-  firebase,
-  aws,
-  nodeJS,
-  python,
-  stripe,
-  airtables,
-  scatterSkills,
-  rentrSkills,
   asjhSkills,
+  rentrSkills,
+  scatterSkills,
   tidynoteSkills,
 } from "./skills-main";
+
+export const projectDetails: { [key: string]: ProjectDetails } = {
+  scatter: new ProjectDetails(
+    "scatter",
+    "Scatter",
+    "Mobile Student Data Access Platform",
+    "Remote",
+    "Freelance",
+    "October 2021",
+    "Present",
+    [
+      "Software Design",
+      "iOS Development",
+      "Web Development",
+      "Backend Development",
+    ],
+    scatterSkills,
+    [
+      "Scatter is a platform that enables administrators at John Hersey High School to access student data via iOS or the Typescript React website.",
+      "Data can be retrieved either by scanning IDs or searching for students.",
+      "Scatter provides data for 2,000+ students.",
+    ],
+    "/",
+    "/",
+    null
+  ),
+};
 
 export const projects: Project[] = [
   new Project(
@@ -59,7 +78,7 @@ export const projects: Project[] = [
   new Project(
     "rentr",
     "Peer-to-Peer Rentals Platform",
-    "Developed peer-to-peer rentals platform as lead developer with team of freelancers. I developed the application backend, payments infrastructure, and much of hte frontend.",
+    "Developed peer-to-peer rentals platform as lead developer with team of freelancers. I developed the application backend, payments infrastructure, and much of the frontend.",
     "rentr",
 
     "appdemo.com/",

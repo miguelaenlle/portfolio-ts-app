@@ -13,6 +13,7 @@
 .image-1 {
   width: 30vw;
   max-width: 400px;
+  margin-right: 5vw;
 }
 .image-2 {
   width: 20vw;
@@ -21,7 +22,6 @@
 
 @media screen and (min-width: 1000px) and (max-width: 1500px) {
   .image-1 {
-    margin-right: -5vw;
     margin-left: 5vw;
   }
 }
