@@ -28,6 +28,11 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
       "Data can be retrieved either by scanning IDs or searching for students.",
       "Scatter provides data for 2,000+ students.",
     ],
+    [
+      "V7mQst0MMnY",
+      "V7mQst0MMnY",
+      "V7mQst0MMnY"
+    ],
     "/",
     "/",
     null

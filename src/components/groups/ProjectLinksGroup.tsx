@@ -10,7 +10,7 @@ import SizeContext from "../../context/size-context";
 import LearnMoreButton from "../buttons/LearnMoreButton";
 
 const ProjectLinksGroup: React.FC<{
-  learnMore: string;
+  learnMore: string | null;
   appDemo: string | null;
   websiteDemo: string | null;
   testimonial: string | null;
@@ -19,11 +19,11 @@ const ProjectLinksGroup: React.FC<{
   const isLarge = sizeCtx.isLarge;
   return (
     <div className={isLarge ? classes["left-stack"] : ""}>
-      <LearnMoreButton link={props.learnMore} />
+      {props.learnMore && <LearnMoreButton link={props.learnMore} />}
       {!isLarge && <br />}
       {props.testimonial && (
         <ViewLink
-          text={"Video Testimonial"}
+        text={`Video Testimonial ${(!props.learnMore) ? "(Youtube)" : ""}`}
           link={props.testimonial}
           reversed={false}
           icon={<LinkIcon />}
@@ -31,7 +31,7 @@ const ProjectLinksGroup: React.FC<{
       )}
       {props.appDemo && (
         <ViewLink
-          text={"App Demo"}
+          text={`App Demo ${(!props.learnMore) ? "(TestFlight)" : ""}`}
           link={props.appDemo}
           reversed={false}
           icon={<LinkIcon />}
@@ -39,7 +39,7 @@ const ProjectLinksGroup: React.FC<{
       )}
       {props.websiteDemo && (
         <ViewLink
-          text={"Website Demo"}
+          text={`Website Demo ${(!props.learnMore) ? "(Laptop/Desktop)" : ""}`}
           link={props.websiteDemo}
           reversed={false}
           icon={<LinkIcon />}
