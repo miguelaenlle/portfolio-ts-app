@@ -48,6 +48,7 @@ const ProjectGroup: React.FC<{ project: Project }> = (props) => {
             appDemo={props.project.appDemoLink}
             websiteDemo={props.project.webDemoLink}
             testimonial={props.project.testimonialLink}
+            centered={false}
           />
 
           <SkillRow

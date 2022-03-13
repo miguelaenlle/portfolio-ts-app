@@ -1,29 +1,32 @@
-import GoToIcon from "../icons/GoToIcon";
-import VideoIcon from "../icons/VideoIcon";
-import LinkIcon from "../icons/LinkIcon";
-
-import ViewLink from "../buttons/ViewLink";
-import classes from "./ProjectLinksGroup.module.css";
-
 import { useContext } from "react";
 import SizeContext from "../../context/size-context";
 import LearnMoreButton from "../buttons/LearnMoreButton";
+import ViewLink from "../buttons/ViewLink";
+import LinkIcon from "../icons/LinkIcon";
+import classes from "./ProjectLinksGroup.module.css";
+
+
 
 const ProjectLinksGroup: React.FC<{
   learnMore: string | null;
   appDemo: string | null;
   websiteDemo: string | null;
   testimonial: string | null;
+  centered: boolean;
 }> = (props) => {
   const sizeCtx = useContext(SizeContext);
   const isLarge = sizeCtx.isLarge;
   return (
-    <div className={isLarge ? classes["left-stack"] : ""}>
+    <div
+      className={`${isLarge ? classes["left-stack"] : ""} ${
+        props.centered ? classes["centered"] : ""
+      }`}
+    >
       {props.learnMore && <LearnMoreButton link={props.learnMore} />}
       {!isLarge && <br />}
       {props.testimonial && (
         <ViewLink
-        text={`Video Testimonial ${(!props.learnMore) ? "(Youtube)" : ""}`}
+          text={`Video Testimonial ${!props.learnMore ? "(Youtube)" : ""}`}
           link={props.testimonial}
           reversed={false}
           icon={<LinkIcon />}
@@ -31,7 +34,7 @@ const ProjectLinksGroup: React.FC<{
       )}
       {props.appDemo && (
         <ViewLink
-          text={`App Demo ${(!props.learnMore) ? "(TestFlight)" : ""}`}
+          text={`App Demo ${!props.learnMore ? "(TestFlight)" : ""}`}
           link={props.appDemo}
           reversed={false}
           icon={<LinkIcon />}
@@ -39,14 +42,13 @@ const ProjectLinksGroup: React.FC<{
       )}
       {props.websiteDemo && (
         <ViewLink
-          text={`Website Demo ${(!props.learnMore) ? "(Laptop/Desktop)" : ""}`}
+          text={`Website Demo ${!props.learnMore ? "(Laptop/Desktop)" : ""}`}
           link={props.websiteDemo}
           reversed={false}
           icon={<LinkIcon />}
         />
       )}
       {!isLarge && <br />}
-      
     </div>
   );
 };
