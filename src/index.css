@@ -1,15 +1,7 @@
 body {
-  margin: 0;
-  font-family: "Inter", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: "Inter"
 }
-text, button, select {
-  
-  font-family: "Inter", sans-serif;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+    
+    font-family: "Inter"
 }

@@ -1,13 +1,28 @@
-h1 {
-  font-weight: 400;
-  font-size: 4rem;
-  color: #353535;
-}
-h2 {
-  font-weight: 400;
-  color: #545454;
-}
-.subheader {
-  font-size: 1.5rem;
 
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

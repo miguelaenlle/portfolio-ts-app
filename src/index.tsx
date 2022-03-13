@@ -1,12 +1,12 @@
+import "./index.css"
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
-import "./index.css";
 import App from "./App";
+import SizeProvider from "./context/SizeProvider";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <SizeProvider>
     <App />
-  </BrowserRouter>,
+  </SizeProvider>,
   document.getElementById("root")
 );
