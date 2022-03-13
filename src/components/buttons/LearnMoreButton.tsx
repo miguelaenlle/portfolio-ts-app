@@ -2,15 +2,15 @@ import classes from "./LearnMoreButton.module.css";
 import ListIcon from "../icons/ListIcon";
 import { useNavigate } from "react-router-dom";
 
-const LearnMoreButton: React.FC<{ link: string }> = (props) => {
+const LearnMoreButton: React.FC<{
+  link: string;
+  handleButtonClicked: () => void;
+}> = (props) => {
   const navigate = useNavigate();
-  const handleButtonClicked = () => {
-    navigate(props.link);
-  };
   return (
     <button
       className={classes["button-background"]}
-      onClick={handleButtonClicked}
+      onClick={props.handleButtonClicked}
     >
       <ListIcon />
       <p>Learn More</p>

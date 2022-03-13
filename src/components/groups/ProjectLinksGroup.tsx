@@ -5,24 +5,33 @@ import ViewLink from "../buttons/ViewLink";
 import LinkIcon from "../icons/LinkIcon";
 import classes from "./ProjectLinksGroup.module.css";
 
-
-
 const ProjectLinksGroup: React.FC<{
   learnMore: string | null;
   appDemo: string | null;
   websiteDemo: string | null;
   testimonial: string | null;
   centered: boolean;
+  onClickLearnMore?: (link: string) => void;
 }> = (props) => {
   const sizeCtx = useContext(SizeContext);
   const isLarge = sizeCtx.isLarge;
+  const handleLearnMoreClicked = () => {
+    if (props.onClickLearnMore && props.learnMore) {
+      props.onClickLearnMore(props.learnMore);
+    }
+  };
   return (
     <div
       className={`${isLarge ? classes["left-stack"] : ""} ${
         props.centered ? classes["centered"] : ""
       }`}
     >
-      {props.learnMore && <LearnMoreButton link={props.learnMore} />}
+      {props.learnMore && (
+        <LearnMoreButton
+          link={props.learnMore}
+          handleButtonClicked={handleLearnMoreClicked}
+        />
+      )}
       {!isLarge && <br />}
       {props.testimonial && (
         <ViewLink

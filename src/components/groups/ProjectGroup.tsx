@@ -8,7 +8,10 @@ import SkillRow from "./SkillRow";
 import classes from "./ProjectGroup.module.css";
 import ProjectLinksGroup from "./ProjectLinksGroup";
 
-const ProjectGroup: React.FC<{ project: Project }> = (props) => {
+const ProjectGroup: React.FC<{
+  project: Project;
+  handleOpenPage: (page: string) => void;
+}> = (props) => {
   const sizeCtx = useContext(SizeContext);
   const isLarge = sizeCtx.isLarge;
 
@@ -49,6 +52,7 @@ const ProjectGroup: React.FC<{ project: Project }> = (props) => {
             websiteDemo={props.project.webDemoLink}
             testimonial={props.project.testimonialLink}
             centered={false}
+            onClickLearnMore={props.handleOpenPage}
           />
 
           <SkillRow

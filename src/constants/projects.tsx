@@ -116,7 +116,7 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
     ],
     ["o4sNjBulD9Y"],
     [
-      new DemoItem("./screenshots/Rentr/mockup-1.png", "phoned"),
+      new DemoItem("./screenshots/Rentr/mockup-1.png", "phone"),
       new DemoItem("./screenshots/Rentr/mockup-2.png", "phone"),
     ],
     "/",

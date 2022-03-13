@@ -126,7 +126,6 @@ function App() {
           </HeaderWrapper>
         }
       />
-      <Route path="/:projectName" element={<PortfolioDetail />} />
     </Routes>
   );
 }

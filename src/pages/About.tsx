@@ -1,14 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Fade } from "react-awesome-reveal";
-import EmailButton from "../components/buttons/EmailButton";
 import ViewLink from "../components/buttons/ViewLink";
 import SocialIcons from "../components/groups/SocialIcons";
 import LinkIcon from "../components/icons/LinkIcon";
 import Header from "../components/text/Header";
 import Subheader from "../components/text/Subheader";
-import TextTransform from "../components/text/TextTransform";
 import { aboutData } from "../constants/about-info";
-import SizeContext from "../context/size-context";
 import classes from "./About.module.css";
 import Wrapper from "./Wrapper";
 
