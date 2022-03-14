@@ -6,7 +6,7 @@ import { aboutData } from "../../constants/about-info";
 
 const SocialIcon: React.FC<{network: string}> = (props) => {
     const links = {
-        github: "https://github.com/bot-developer3",
+        github: "https://github.com/miguelaenlle",
         linkedin: "https://www.linkedin.com/in/miguel-aenlle-2265a21b1/",
         email: `mailto:${aboutData.email}`
     }

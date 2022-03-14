@@ -29,7 +29,7 @@ const ProjectGroup: React.FC<{
 
         <div
           className={
-            props.project.right === null
+            props.project.right !== null
               ? `${
                   isLarge
                     ? classes["project-wrapper"]
