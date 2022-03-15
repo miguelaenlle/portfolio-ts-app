@@ -17,6 +17,9 @@
   transition: background-image 0.2s ease-in-out;
   cursor: pointer;
 }
+.button-text {
+  white-space: nowrap;
+}
 
 .button-background > svg {
   margin-right: 0.5rem;

@@ -58,7 +58,7 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
       "Educators can view student notebooks via the app or the website to provide additional support and instruction for students",
       "Actively used by 220+ students and educators at John Hersey High School",
     ],
-    ["V7mQst0MMnY"],
+    ["S-Pudcpqsjk"],
     [
       new DemoItem("./screenshots/TidyNote/mockup-desktop.png", "desktop"),
       new DemoItem("./screenshots/TidyNote/mockup-tablet.png", "tablet"),

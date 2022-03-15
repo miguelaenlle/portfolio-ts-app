@@ -6,7 +6,8 @@
 .project-wrapper {
   margin-top: 15vh;
   margin-bottom: 15vh;
-  max-width: 40vw;
+  max-width: 50vw;
+  padding-right: 2vw;
 }
 
 .right-based {
@@ -16,7 +17,6 @@
 
 .left-based {
   margin-left: 0;
-  padding-bottom: 25vh;
 }
 
 .project-wrapper-small {

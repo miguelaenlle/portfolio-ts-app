@@ -13,7 +13,7 @@ const LearnMoreButton: React.FC<{
       onClick={props.handleButtonClicked}
     >
       <ListIcon />
-      <p>Learn More</p>
+      <p className = {classes["button-text"]}>Learn More</p>
     </button>
   );
 };

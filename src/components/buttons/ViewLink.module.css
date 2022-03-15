@@ -6,6 +6,7 @@
     margin-right: 0.5rem;
 }
 .link {
+    white-space: nowrap;
     font-size: 1rem;
     font-weight: 400;
     color: #3C6E71;

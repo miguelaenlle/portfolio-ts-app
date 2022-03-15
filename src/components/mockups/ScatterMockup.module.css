@@ -13,13 +13,17 @@
 .image-div-2 {
   position: absolute;
   z-index: 3;
-  bottom: -0rem;
+  bottom: 2rem;
   right: 0;
 }
 
 @media screen and (max-width: 1000px) {
   .image-1 {
     width: 100%;
+  }
+  .image-div-2 {
+    
+  bottom: 1rem;
   }
 }
 
