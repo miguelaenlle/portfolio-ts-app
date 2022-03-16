@@ -5,14 +5,14 @@ const RentrMockup: React.FC<{}> = (props) => {
   const image1 = (
     <img
       className={classes["image-1"]}
-      src={"./mockups/Rentr/mockup-1.png"}
+      src={"/mockups/Rentr/mockup-1.png"}
       alt="Rentr Screenshot"
     />
   );
   const image2 = (
     <img
       className={classes["image-2"]}
-      src={"./mockups/Rentr/mockup-2.png"}
+      src={"/mockups/Rentr/mockup-2.png"}
       alt="Rentr Screenshot"
     />
   );

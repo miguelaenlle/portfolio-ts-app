@@ -125,7 +125,9 @@ function App() {
             </div>
           </HeaderWrapper>
         }
-      />
+      >
+        <Route path="/projects/:projectId" element={<PortfolioDetail />} />
+      </Route>
     </Routes>
   );
 }

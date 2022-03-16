@@ -31,8 +31,8 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
     ],
     ["V7mQst0MMnY"],
     [
-      new DemoItem("./screenshots/Scatter/mockup-laptop.png", "laptop"),
-      new DemoItem("./screenshots/Scatter/mockup-phone.png", "phone"),
+      new DemoItem("/screenshots/Scatter/mockup-laptop.png", "laptop"),
+      new DemoItem("/screenshots/Scatter/mockup-phone.png", "phone"),
     ],
     "/",
     "/",
@@ -58,10 +58,20 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
       "Educators can view student notebooks via the app or the website to provide additional support and instruction for students",
       "Actively used by 220+ students and educators at John Hersey High School",
     ],
-    ["S-Pudcpqsjk"],
+    ["7XBPR7qe268", "S-Pudcpqsjk"],
     [
-      new DemoItem("./screenshots/TidyNote/mockup-desktop.png", "desktop"),
-      new DemoItem("./screenshots/TidyNote/mockup-tablet.png", "tablet"),
+      new DemoItem("/screenshots/TidyNote/mockup-ipad-1.png", "tablet"),
+      new DemoItem("/screenshots/TidyNote/mockup-ipad-2.png", "tablet"),
+      new DemoItem("/screenshots/TidyNote/mockup-ipad-3.png", "tablet"),
+      new DemoItem("/screenshots/TidyNote/mockup-ipad-4.png", "tablet"),
+      new DemoItem("/screenshots/TidyNote/mockup-ipad-5.png", "tablet"),
+      new DemoItem("/screenshots/TidyNote/mockup-ipad-6.png", "tablet"),
+      new DemoItem("/screenshots/TidyNote/mockup-ipad-7.png", "tablet"),
+      new DemoItem("/screenshots/TidyNote/mockup-ipad-8.png", "tablet"),
+      new DemoItem("/screenshots/TidyNote/mockup-desktop-1.png", "desktop"),
+      new DemoItem("/screenshots/TidyNote/mockup-desktop-2.png", "desktop"),
+      new DemoItem("/screenshots/TidyNote/mockup-desktop-3.png", "desktop"),
+      new DemoItem("/screenshots/TidyNote/mockup-desktop-4.png", "desktop"),
     ],
     "/",
     "/",
@@ -88,8 +98,8 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
     ],
     ["V7mQst0MMnY"],
     [
-      new DemoItem("./screenshots/ASJH/mockup-laptop.png", "laptop"),
-      new DemoItem("./screenshots/ASJH/mockup-phone.png", "phone"),
+      new DemoItem("/screenshots/ASJH/mockup-laptop.png", "laptop"),
+      new DemoItem("/screenshots/ASJH/mockup-phone.png", "phone"),
     ],
     null,
     "/",
@@ -109,15 +119,15 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
       "Rentr is a peer-to-peer rentals platform that enables anyone to rent anything",
 
       "Collaborated with designer & freelance developer to develop SwiftUI frontend ",
-      
+
       "Developed backend using Firebase, Google Cloud, and Algolia",
 
-      "Developed bank integrations and payments backend with Stripe"
+      "Developed bank integrations and payments backend with Stripe",
     ],
     ["o4sNjBulD9Y"],
     [
-      new DemoItem("./screenshots/Rentr/mockup-1.png", "phone"),
-      new DemoItem("./screenshots/Rentr/mockup-2.png", "phone"),
+      new DemoItem("/screenshots/Rentr/mockup-1.png", "phone"),
+      new DemoItem("/screenshots/Rentr/mockup-2.png", "phone"),
     ],
     "/",
     null,

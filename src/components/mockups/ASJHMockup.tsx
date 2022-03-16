@@ -5,14 +5,14 @@ const ASJHMockup: React.FC<{}> = (props) => {
   const image1 = (
     <img
       className={classes["image-1"]}
-      src={"./mockups/ASJH/mockup-laptop.png"}
+      src={"/mockups/ASJH/mockup-laptop.png"}
       alt="Scatter Screenshot"
     />
   );
   const image2 = (
     <img
       className={classes["image-2"]}
-      src={"./mockups/ASJH/mockup-phone.png"}
+      src={"/mockups/ASJH/mockup-phone.png"}
       alt="Scatter Screenshot"
     />
   );

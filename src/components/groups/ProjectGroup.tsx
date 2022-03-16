@@ -48,9 +48,9 @@ const ProjectGroup: React.FC<{
 
           <ProjectLinksGroup
             learnMore={props.project.learnMoreLink}
-            appDemo={props.project.appDemoLink}
-            websiteDemo={props.project.webDemoLink}
-            testimonial={props.project.testimonialLink}
+            appDemo={null}
+            websiteDemo={null}
+            testimonial={null}
             centered={false}
             onClickLearnMore={props.handleOpenPage}
           />

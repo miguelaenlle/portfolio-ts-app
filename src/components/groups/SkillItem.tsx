@@ -14,7 +14,7 @@ const SkillItem: React.FC<{
     >
       <img
         className={classes["icon"]}
-        src={`./icons/${props.icon}.png`}
+        src={`/icons/${props.icon}.png`}
         alt={props.skill}
       />
       <p

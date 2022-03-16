@@ -5,14 +5,14 @@ const TidynoteMockup: React.FC<{}> = (props) => {
   const image1 = (
     <img
       className={classes["image-1"]}
-      src={"./mockups/Tidynote/mockup-desktop.png"}
+      src={"/mockups/Tidynote/mockup-desktop.png"}
       alt="Scatter Screenshot"
     />
   );
   const image2 = (
     <img
       className={classes["image-2"]}
-      src={"./mockups/Tidynote/mockup-tablet.png"}
+      src={"/mockups/Tidynote/mockup-tablet.png"}
       alt="Scatter Screenshot"
     />
   );
