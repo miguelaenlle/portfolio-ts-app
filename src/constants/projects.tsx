@@ -98,8 +98,11 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
     ],
     ["V7mQst0MMnY"],
     [
-      new DemoItem("/screenshots/ASJH/mockup-laptop.png", "laptop"),
+      new DemoItem("/screenshots/ASJH/mockup-laptop-3.png", "laptop"),
       new DemoItem("/screenshots/ASJH/mockup-phone.png", "phone"),
+      new DemoItem("/screenshots/ASJH/mockup-laptop-1.png", "laptop"),
+      new DemoItem("/screenshots/ASJH/mockup-laptop-2.png", "laptop"),
+      new DemoItem("/screenshots/ASJH/mockup-laptop-4.png", "laptop"),
     ],
     null,
     "/",
