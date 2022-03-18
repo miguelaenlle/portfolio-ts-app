@@ -96,7 +96,7 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
 
       "Handles 500+ legal applications per year",
     ],
-    ["V7mQst0MMnY"],
+    ["Bo9bA7gGNrU", "mez8lr4Ch1U"],
     [
       new DemoItem("/screenshots/ASJH/mockup-laptop-3.png", "laptop"),
       new DemoItem("/screenshots/ASJH/mockup-phone.png", "phone"),
