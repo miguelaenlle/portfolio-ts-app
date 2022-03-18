@@ -31,8 +31,15 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
     ],
     ["V7mQst0MMnY"],
     [
-      new DemoItem("/screenshots/Scatter/mockup-laptop.png", "laptop"),
-      new DemoItem("/screenshots/Scatter/mockup-phone.png", "phone"),
+      new DemoItem("/screenshots/Scatter/mockup-phone-1.png", "phone"),
+      new DemoItem("/screenshots/Scatter/mockup-phone-2.png", "phone"),
+      new DemoItem("/screenshots/Scatter/mockup-phone-3.png", "phone"),
+      new DemoItem("/screenshots/Scatter/mockup-laptop-1.png", "laptop"),
+      new DemoItem("/screenshots/Scatter/mockup-laptop-6.png", "laptop"),
+      new DemoItem("/screenshots/Scatter/mockup-laptop-2.png", "laptop"),
+      new DemoItem("/screenshots/Scatter/mockup-laptop-3.png", "laptop"),
+      new DemoItem("/screenshots/Scatter/mockup-laptop-4.png", "laptop"),
+      new DemoItem("/screenshots/Scatter/mockup-laptop-5.png", "laptop")
     ],
     "/",
     "/",
@@ -130,7 +137,7 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
     ["o4sNjBulD9Y"],
     [
       new DemoItem("/screenshots/Rentr/mockup-1.png", "phone"),
-      new DemoItem("/screenshots/Rentr/mockup-2.png", "phone"),
+      new DemoItem("/screenshots/Rentr/mockup-2.png", "phone")
     ],
     "/",
     null,
