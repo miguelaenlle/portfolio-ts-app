@@ -1,6 +1,6 @@
+import { useState } from "react";
+import AnimatedMockup from "./AnimatedMockup";
 import classes from "./ScatterMockup.module.css";
-import { Slide } from "react-awesome-reveal";
-
 const ScatterMockup: React.FC<{}> = (props) => {
   const image1 = (
     <img
@@ -16,17 +16,27 @@ const ScatterMockup: React.FC<{}> = (props) => {
       alt="Scatter Screenshot"
     />
   );
+  const [animationRan, setAnimationRan] = useState(false);
+  const handleAnimationRan = () => {
+    setAnimationRan(true);
+  };
   return (
-    <div className={`${classes["image-1"]} ${classes["image-div-1"]}`}>
-      <Slide direction="right" triggerOnce={true}>
+    <AnimatedMockup
+      animationRan={animationRan}
+      handleAnimated={handleAnimationRan}
+    >
+      <div className={`${classes["image-1"]} ${classes["image-div-1"]}`}>
         {image1}
-      </Slide>
-      <div className={`${classes["image-2"]} ${classes["image-div-2"]}`}>
-        <Slide direction="right" triggerOnce={true}>
-          {image2}
-        </Slide>
+        <AnimatedMockup
+          animationRan={animationRan}
+          handleAnimated={handleAnimationRan}
+        >
+          <div className={`${classes["image-2"]} ${classes["image-div-2"]}`}>
+            {image2}
+          </div>
+        </AnimatedMockup>
       </div>
-    </div>
+    </AnimatedMockup>
   );
 };
 export default ScatterMockup;

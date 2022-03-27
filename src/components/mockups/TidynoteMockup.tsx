@@ -1,5 +1,7 @@
 import classes from "./TidynoteMockup.module.css";
 import { Slide } from "react-awesome-reveal";
+import AnimatedMockup from "./AnimatedMockup";
+import { useState } from "react";
 
 const TidynoteMockup: React.FC<{}> = (props) => {
   const image1 = (
@@ -16,17 +18,28 @@ const TidynoteMockup: React.FC<{}> = (props) => {
       alt="Scatter Screenshot"
     />
   );
+  
+  const [animationRan, setAnimationRan] = useState(false);
+  const handleAnimationRan = () => {
+    setAnimationRan(true);
+  };
   return (
-    <div className={`${classes["image-1"]} ${classes["image-div-1"]}`}>
-      <Slide direction="right" triggerOnce={true}>
+    <AnimatedMockup
+      animationRan={animationRan}
+      handleAnimated={handleAnimationRan}
+    >
+      <div className={`${classes["image-1"]} ${classes["image-div-1"]}`}>
         {image1}
-      </Slide>
-      <div className={`${classes["image-2"]} ${classes["image-div-2"]}`}>
-        <Slide direction="right" triggerOnce={true}>
-          {image2}
-        </Slide>
+        <AnimatedMockup
+          animationRan={animationRan}
+          handleAnimated={handleAnimationRan}
+        >
+          <div className={`${classes["image-2"]} ${classes["image-div-2"]}`}>
+            {image2}
+          </div>
+        </AnimatedMockup>
       </div>
-    </div>
+    </AnimatedMockup>
   );
 };
 export default TidynoteMockup;

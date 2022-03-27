@@ -17,13 +17,20 @@
   right: 0;
 }
 
+.animated {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  
+}
 @media screen and (max-width: 1000px) {
   .image-1 {
     width: 100%;
   }
   .image-div-2 {
-    
-  bottom: 1rem;
+    bottom: 1rem;
   }
 }
 
@@ -31,7 +38,6 @@
   .image-1 {
     width: 90vw;
     margin-right: -50vw;
-  
   }
   .image-div-2 {
     max-width: 250px;
