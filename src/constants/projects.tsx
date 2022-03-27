@@ -120,7 +120,7 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
     "Rentr",
     "Peer-to-Peer Rentals Platform",
     "Remote",
-    "Cofounder",
+    "Collaborative Project",
     "January 2021",
     "April 2021",
     ["iOS Development", "Backend Development"],
@@ -128,7 +128,7 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
     [
       "Rentr is a peer-to-peer rentals platform that enables anyone to rent anything",
 
-      "Collaborated with designer & freelance developer to develop SwiftUI frontend ",
+      "Collaborated with designer & multiple freelance developers to develop SwiftUI frontend ",
 
       "Developed backend using Firebase, Google Cloud, and Algolia",
 
