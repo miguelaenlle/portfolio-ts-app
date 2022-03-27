@@ -1,0 +1,18 @@
+.animated {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+.transparent {
+  opacity: 0%;
+}
+
+@keyframes slidein {
+  0% {
+      opacity: 0%;
+      transform: translate(50%,0px)
+  }
+  100% {
+    opacity: 100%;
+    transform: translate(0px,0px)
+  }
+}

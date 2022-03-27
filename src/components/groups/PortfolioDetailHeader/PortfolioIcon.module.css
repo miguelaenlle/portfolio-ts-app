@@ -1,0 +1,8 @@
+.portfolio-icon {
+  height: 48px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.portfolio-icon-unstyled {
+  height: 48px;
+}

@@ -1,0 +1,33 @@
+.portfolio-detail-content {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+.back-text {
+  color: #6fa2a5;
+}
+.back-text:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  .portfolio-detail-content {
+    padding: 3rem 3rem;
+  }
+}
+.header-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fullView {
+  background-color: #fff;
+  display: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  overflow-y: scroll;
+}

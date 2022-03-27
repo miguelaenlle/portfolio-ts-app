@@ -1,0 +1,12 @@
+.button {
+  display: flex;
+  align-items: center;
+}
+.button > svg {
+  margin-right:0.5rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: #000;
+}
