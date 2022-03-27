@@ -4,6 +4,7 @@
 }
 .transparent {
   opacity: 0%;
+  transform: translate(50%,0px);
 }
 
 @keyframes slidein {

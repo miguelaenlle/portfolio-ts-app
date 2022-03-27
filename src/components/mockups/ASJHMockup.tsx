@@ -22,6 +22,7 @@ const ASJHMockup: React.FC<{}> = (props) => {
 
   const [animationRan, setAnimationRan] = useState(false);
   const handleAnimationRan = () => {
+
     setAnimationRan(true);
   };
 
