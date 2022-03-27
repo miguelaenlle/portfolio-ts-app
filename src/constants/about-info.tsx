@@ -1,11 +1,14 @@
 export const aboutData = {
-    header: "Miguel Aenlle",
-    subheader: "Fullstack Web & Mobile Developer",
-    location: "Mount Prospect, IL",
-    email: "miguelaenlle@icloud.com",
-    description: "I'm a developer who strives to solve problems and create amazing user experiences through software.",
-    long_description: "I’m a passionate freelance developer and student with proven abilities to create scalable software solutions that perform. I’ve created many web/mobile applications for freelance clients and shipped multiple bootstrapped software products. I’m currently searching for freelance or job opportunities to solve problems and support your organization.",
-    contact_description: "I'm currently open to employment or freelance opportunities. Feel free to start a chat!",
-    socials: ['github', 'linkedin'],
-    resumeLink: 'https://drive.google.com/file/d/1pPHwN7mfFNnUyWhzyBswOjXxPA7zWjhV/view?usp=sharing' // TODO: Add resume link
-}
+  header: "Miguel Aenlle",
+  subheader: "Fullstack Web & Mobile Developer",
+  location: "Mount Prospect, IL",
+  email: "miguelaenlle@icloud.com",
+  description:
+    "I'm a developer who strives to solve problems and create amazing user experiences through software.",
+  long_description:
+    "I’m a passionate freelance developer and student with proven abilities to create scalable software solutions that perform. I’ve created many web/mobile applications for freelance clients and shipped multiple bootstrapped software products. I’m currently searching for freelance or job opportunities to solve problems and support your organization.",
+  contact_description:
+    "I'm currently open to employment or freelance opportunities. Feel free to start a chat!",
+  socials: ["github", "linkedin"],
+  resumeLink: "/resume/Miguel Aenlle Developer Resume.pdf",
+};
