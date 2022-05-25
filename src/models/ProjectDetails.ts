@@ -17,6 +17,7 @@ class ProjectDetails {
   appDemoLink: string | null = null;
   webDemoLink: string | null = null;
   testimonialLink: string | null = null;
+  githubLink: string | null = null;
 
   constructor(
     id: string,
@@ -33,6 +34,7 @@ class ProjectDetails {
     screenshots: DemoItem[],
     appDemoLink: string | null,
     webDemoLink: string | null,
+    githubLink: string | null,
     testimonialLink: string | null
   ) {
     this.id = id;
@@ -49,6 +51,7 @@ class ProjectDetails {
     this.videos = videos;
     this.appDemoLink = appDemoLink;
     this.webDemoLink = webDemoLink;
+    this.githubLink = githubLink;
     this.testimonialLink = testimonialLink;
   }
 }

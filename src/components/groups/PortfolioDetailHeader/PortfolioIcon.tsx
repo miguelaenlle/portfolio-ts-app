@@ -28,6 +28,12 @@ const PortfolioIcon: React.FC<{ projectID: string }> = (props) => {
           className={classes["portfolio-icon"]}
         />
       )}
+      {props.projectID === "redddit" && (
+        <img
+          src={`${directory}/Redddit.png`}
+          className={classes["reddit-icon"]}
+        />
+      )}
     </div>
   );
 };

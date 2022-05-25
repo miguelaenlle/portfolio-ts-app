@@ -6,10 +6,42 @@ import {
   rentrSkills,
   scatterSkills,
   tidynoteSkills,
-  reddditSkills
+  reddditSkills,
 } from "./skills-main";
 
 export const projectDetails: { [key: string]: ProjectDetails } = {
+  redddit: new ProjectDetails(
+    "redddit",
+    "Redddit",
+    "Open-Source Reddit Clone",
+    "Remote",
+    "Personal",
+    "Mar 2022",
+    "May 2022",
+    ["Web Design", "Web Development", "Backend Development"],
+    reddditSkills,
+    [
+      "Independently designed and developed Reddit Clone frontend and backend",
+      "Used Typescript React and TailwindCSS to build the frontend",
+      "Developed ExpressJS Rest API to enable frontend to interact with MongoDB, Google Cloud, and SendGrid",
+      "Developed authentication system with JWT, BCrypt, and SendGrid",
+    ],
+    ["SUX5xflrFCo"],
+    [
+      new DemoItem("/screenshots/Redddit/laptop-1.png", "laptop"),
+      new DemoItem("/screenshots/Redddit/laptop-2.png", "laptop"),
+      new DemoItem("/screenshots/Redddit/laptop-3.png", "laptop"),
+      new DemoItem("/screenshots/Redddit/laptop-4.png", "laptop"),
+      new DemoItem("/screenshots/Redddit/phone-1.png", "phone"),
+      new DemoItem("/screenshots/Redddit/phone-2.png", "phone"),
+      new DemoItem("/screenshots/Redddit/phone-3.png", "phone"),
+      new DemoItem("/screenshots/Redddit/phone-4.png", "phone")
+    ],
+    "/",
+    "https://redddit-app.web.app/home",
+    "https://github.com/miguelaenlle/reddit-clone",
+    null
+  ),
   scatter: new ProjectDetails(
     "scatter",
     "Scatter",
@@ -40,10 +72,11 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
       new DemoItem("/screenshots/Scatter/mockup-laptop-2.png", "laptop"),
       new DemoItem("/screenshots/Scatter/mockup-laptop-3.png", "laptop"),
       new DemoItem("/screenshots/Scatter/mockup-laptop-4.png", "laptop"),
-      new DemoItem("/screenshots/Scatter/mockup-laptop-5.png", "laptop")
+      new DemoItem("/screenshots/Scatter/mockup-laptop-5.png", "laptop"),
     ],
     "/",
     "/",
+    null,
     null
   ),
   tidynote: new ProjectDetails(
@@ -83,6 +116,7 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
     ],
     "/",
     "/",
+    null,
     null
   ),
   asjh: new ProjectDetails(
@@ -113,6 +147,7 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
       new DemoItem("/screenshots/ASJH/mockup-laptop-4.png", "laptop"),
     ],
     null,
+    null,
     "/",
     "/"
   ),
@@ -138,16 +173,16 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
     ["o4sNjBulD9Y"],
     [
       new DemoItem("/screenshots/Rentr/mockup-1.png", "phone"),
-      new DemoItem("/screenshots/Rentr/mockup-2.png", "phone")
+      new DemoItem("/screenshots/Rentr/mockup-2.png", "phone"),
     ],
     "/",
     null,
-    null
+    null,
+    ""
   ),
 };
 
 export const projects: Project[] = [
-  
   new Project(
     "redddit",
     "Open Source Reddit Clone",
@@ -160,7 +195,7 @@ export const projects: Project[] = [
     reddditSkills,
     false
   ),
-  
+
   new Project(
     "rentr",
     "Peer-to-Peer Rentals Platform",

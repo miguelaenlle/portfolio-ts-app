@@ -67,6 +67,8 @@ export const skills: { [key: string]: Skill[] } = {
     firebase,
     amplify,
     sendgrid,
+    jwt,
+    bcrypt,
     heroku,
     stripe,
     gcloud,
