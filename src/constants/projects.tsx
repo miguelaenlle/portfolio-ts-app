@@ -6,6 +6,7 @@ import {
   rentrSkills,
   scatterSkills,
   tidynoteSkills,
+  reddditSkills
 } from "./skills-main";
 
 export const projectDetails: { [key: string]: ProjectDetails } = {
@@ -146,6 +147,32 @@ export const projectDetails: { [key: string]: ProjectDetails } = {
 };
 
 export const projects: Project[] = [
+  
+  new Project(
+    "redddit",
+    "Open Source Reddit Clone",
+    "Open-source fully-featured Reddit Clone built using Tailwind and the MERN stack",
+    "redddit",
+
+    "appdemo.com/",
+    "",
+    "",
+    reddditSkills,
+    false
+  ),
+  
+  new Project(
+    "rentr",
+    "Peer-to-Peer Rentals Platform",
+    "Developed peer-to-peer rentals platform as lead developer with team of freelancers. I developed the application backend, payments infrastructure, and much of the frontend.",
+    "rentr",
+
+    "appdemo.com/",
+    "",
+    "",
+    rentrSkills,
+    false
+  ),
   new Project(
     "scatter",
     "Mobile Student Data Access Platform",
@@ -184,18 +211,6 @@ export const projects: Project[] = [
 
     null,
     tidynoteSkills,
-    false
-  ),
-  new Project(
-    "rentr",
-    "Peer-to-Peer Rentals Platform",
-    "Developed peer-to-peer rentals platform as lead developer with team of freelancers. I developed the application backend, payments infrastructure, and much of the frontend.",
-    "rentr",
-
-    "appdemo.com/",
-    "",
-    "",
-    rentrSkills,
     false
   ),
 ];

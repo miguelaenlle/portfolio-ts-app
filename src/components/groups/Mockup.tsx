@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import SizeContext from "../../context/size-context";
 import ASJHMockup from "../mockups/ASJHMockup";
+import ReddditMockup from "../mockups/Redddit";
 import RentrMockup from "../mockups/RentrMockup";
 import ScatterMockup from "../mockups/ScatterMockup";
 import TidynoteMockup from "../mockups/TidynoteMockup";
@@ -16,6 +17,7 @@ const Mockup: React.FC<{ mockup: string  }> = (props) => {
       {props.mockup === "asjh" && <ASJHMockup />}
       {props.mockup === "scatter" && <ScatterMockup />}
       {props.mockup === "tidynote" && <TidynoteMockup />}
+      {props.mockup === "redddit" && <ReddditMockup />}
     </div>
   );
 };
